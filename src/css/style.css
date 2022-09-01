@@ -1,0 +1,277 @@
+/* Estrutura do site */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #fff url(../img/fundo-preto.png) repeat-x;
+}
+
+#container {
+    width: 75rem;
+    margin: 0 auto;
+}
+
+#topo {
+    height: 15rem;
+    background: url(../img/detalhe-topo-preto.png) no-repeat right top;
+    padding-top: 2.5rem;
+}
+
+.logo {
+    width: 15.2rem;
+    height: 6.6rem;
+    background: url(../img/logo-portal-extremoz.png) no-repeat center;
+    text-indent: -300rem;
+}
+
+/* Barra de Navegaçao */
+
+a:link, a:visited{
+    color: #b10333;
+    padding: 0.2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navegacao ul {
+    margin-top: 3rem;
+    background: #b10333;
+    float: left;
+}
+
+#navegacao ul li {
+    float: left;
+}
+
+#navegacao ul a {
+    font-size: 1.4rem;
+    display: block;
+    padding: 0.5rem 1.5rem;
+    line-height: 3.3rem;
+    text-decoration: none;
+    color: #fff;
+    background: url(../img/divisor.png) no-repeat left center;
+}
+
+#navegacao ul .primeiro a {
+    background: none;
+}
+
+#navegacao ul a:hover {
+    color: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.extremoz-em-prosa #navegacao a#extremoz-em-prosa,
+body.futebol #navegacao a#futebol,
+body.saude-economia #navegacao a#saude-economia,
+body.horario-de-onibus #navegacao a#horario-de-onibus,
+body.fotos #navegacao a#fotos {
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+}
+
+/* caixa */
+
+.caixa {
+    background: #f3f3f3 url(../img/fundo-caixa.png);
+    margin: 1rem 0;
+    padding: 0.5rem;
+}
+
+h2 {
+    font-size: 1.76rem;
+    background: rgb(32, 32, 32);
+    color: #fff;
+    letter-spacing: 0.3rem;
+    padding: 0.5rem;
+}
+
+.conteudo-caixa {
+    background: #FFF;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.conteudo-caixa img {
+    width: 100%;
+}
+
+
+
+/* formatando imagens */
+
+img{
+    border: 0.2rem solid #dfdfdf;
+}
+
+
+/* formatando cabeçalhos */
+
+h3 {
+    text-transform: capitalize;
+    display: inline;
+    font-family: 'Lancelot', cursive;
+    font-size: 1.6rem;
+    padding: 0.3rem;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.popular h3 {
+    background: #de003e;
+}
+
+/* Menu lateral */
+
+#lateral ul a{
+    font-size: 1.44rem;
+    padding: 0.3rem;
+    display: block;
+    line-height: 3rem;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    background: #f9f9f9 url(../img/marcador.png) no-repeat left center;
+    color: #a1a1a1;
+    padding-left: 2rem;
+}
+
+/* layout de 3 colunas */
+
+#conteudo {
+    margin-top: 6rem;
+}
+
+#lateral {
+    float: left;
+    margin: 0 0 2rem -75rem;
+    width: 18rem;
+}
+
+#primario {
+    width: 27rem;
+    float: left;
+    margin: 0 0 2rem 19.5rem;
+
+}
+
+#duas-colunas #primario {
+    width: 55.5rem;
+}
+
+#uma-coluna #primario {
+    width: 75rem;
+    margin: 0 0 2rem 0;
+}
+
+#secundario {
+    float: left;
+    width: 27rem;
+    margin: 0 0 2rem 1.5rem;
+}
+
+/* formataçao de formulario */
+
+label {
+    display: block;
+    cursor: pointer;
+    font-size: large;
+}
+
+input {
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: 0.5rem;
+    width: 12.5rem;
+    border: 0.1rem solid #f1f1f1;
+}
+
+input.submit {
+    width: 8rem;
+    color: #FFF;
+    background-color: #b10333;
+    border: 0.2rem solid #870529;
+    margin-top: 0.5rem;
+}
+
+/* formatando lista noticias */
+
+#lista-noticias li {
+    padding: 0.2rem;
+    border-bottom: 0.1rem solid #ccc;
+    height: 6.5rem;
+}
+
+#lista-noticias li a img {
+    width: 8rem;
+}
+
+#lista-noticias li a img {
+    float: left;
+    margin: 0.5rem;
+}
+
+#lista-noticias li a {
+    text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+    font-size: 1.3rem;
+    padding: 0;
+    color: #576069;
+}
+
+#lista-noticias li a p {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+#lista-noticias li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.noticia p {
+    font-size: 1.6rem;
+}
+
+.noticia h3 {
+    font-size: 2rem;
+}
+
+/* Rodape */
+
+#container-rodape {
+    background: rgb(10, 10, 10);
+    clear: both;
+    padding: 2rem;
+}
+
+#rodape {
+    width: 75rem;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: center;
+}
